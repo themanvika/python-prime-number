@@ -4,6 +4,7 @@ import math
 print("1부터 100 사이의 소수를 구합니다.")
 for num in range(2, 101):
     is_prime = True
+    # 제곱근까지만 나누어떨어지는지 확인하여 연산 속도 대폭 향상2
     for i in range(2, int(math.sqrt(num)) + 1):
         if num % i == 0:
             is_prime = False
